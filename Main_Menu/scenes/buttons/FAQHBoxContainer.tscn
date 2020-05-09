@@ -1,0 +1,64 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Main_Menu/scenes/buttons/TradeMarketFAQButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Main_Menu/scenes/buttons/PilotConFAQButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main_Menu/scenes/buttons/MercStoreFAQButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Main_Menu/scenes/buttons/ClanConFAQButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Main_Menu/scenes/buttons/FairPlayFAQButton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main_Menu/scenes/buttons/RankFAQButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Main_Menu/scenes/buttons/3RDPartyFAQButton.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main_Menu/scenes/buttons/TCFAQButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Main_Menu/scripts/buttons/MercStoreFAQButton.gd" type="Script" id=12]
+[ext_resource path="res://Main_Menu/scripts/TradeMarketFAQButton.gd" type="Script" id=13]
+[ext_resource path="res://Main_Menu/scripts/buttons/FairPlayFAQButton.gd" type="Script" id=14]
+[ext_resource path="res://Main_Menu/scripts/buttons/3RDPartyFAQButton.gd" type="Script" id=15]
+[ext_resource path="res://Main_Menu/scripts/buttons/RankFAQButton.gd" type="Script" id=16]
+[ext_resource path="res://Main_Menu/scripts/buttons/TCFAQButton.gd" type="Script" id=17]
+[ext_resource path="res://Main_Menu/scripts/buttons/FaqThemeButtons.gd" type="Script" id=18]
+
+
+
+
+[node name="HBoxContainer" type="VBoxContainer"]
+margin_left = 103.0
+margin_right = 351.0
+margin_bottom = 551.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+margin_top = 173.0
+margin_right = 248.0
+margin_bottom = 377.0
+alignment = 1
+script = ExtResource( 18 )
+
+[node name="ClanConButton" parent="VBoxContainer3" instance=ExtResource( 5 )]
+
+[node name="PilotConButton" parent="VBoxContainer3" instance=ExtResource( 3 )]
+
+[node name="MercStoreButton" parent="VBoxContainer3" instance=ExtResource( 4 )]
+script = ExtResource( 12 )
+
+[node name="TradeMarketButton" parent="VBoxContainer3" instance=ExtResource( 2 )]
+script = ExtResource( 13 )
+
+[node name="FairPlayButton" parent="VBoxContainer3" instance=ExtResource( 6 )]
+script = ExtResource( 14 )
+
+[node name="RankButton" parent="VBoxContainer3" instance=ExtResource( 7 )]
+script = ExtResource( 16 )
+
+[node name="3RDPartyButton" parent="VBoxContainer3" instance=ExtResource( 8 )]
+script = ExtResource( 15 )
+
+[node name="TCButton" parent="VBoxContainer3" instance=ExtResource( 9 )]
+script = ExtResource( 17 )
+[connection signal="pressed" from="VBoxContainer3/MercStoreButton" to="VBoxContainer3/MercStoreButton" method="_on_MercStoreButton_pressed"]
+[connection signal="pressed" from="VBoxContainer3/TradeMarketButton" to="VBoxContainer3/TradeMarketButton" method="_on_TradeMarketButton_pressed"]
+[connection signal="pressed" from="VBoxContainer3/FairPlayButton" to="VBoxContainer3/FairPlayButton" method="_on_FairPlayButton_pressed"]
+[connection signal="pressed" from="VBoxContainer3/RankButton" to="VBoxContainer3/RankButton" method="_on_RankButton_pressed"]
+[connection signal="pressed" from="VBoxContainer3/3RDPartyButton" to="VBoxContainer3/3RDPartyButton" method="_on_3RDPartyButton_pressed"]
+[connection signal="pressed" from="VBoxContainer3/TCButton" to="VBoxContainer3/TCButton" method="_on_TCButton_pressed"]

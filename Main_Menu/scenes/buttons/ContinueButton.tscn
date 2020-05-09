@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/red_seven_20.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Main_Menu/scripts/buttons/ContinueButton.gd" type="Script" id=2]
+
+[node name="ContinueButton" type="Button"]
+margin_top = 55.0
+margin_right = 518.0
+margin_bottom = 106.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+flat = true
+align = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]

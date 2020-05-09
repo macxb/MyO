@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/red_seven_10_red.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Main_Menu/scripts/buttons/ClanConFAQButton.gd" type="Script" id=2]
+
+
+[node name="ClanConButton" type="Button"]
+margin_right = 248.0
+margin_bottom = 22.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "Clan Con"
+flat = true
+align = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://Main_Menu/scenes/ClanCon.tscn"
+[connection signal="pressed" from="." to="." method="_on_ClanConButton_pressed"]

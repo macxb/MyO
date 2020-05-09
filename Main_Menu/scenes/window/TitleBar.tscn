@@ -1,0 +1,102 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/fonts/red_seven.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Main_Menu/scripts/TitleBar.gd" type="Script" id=2]
+
+[sub_resource type="InputEventKey" id=1]
+scancode = 16777253
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
+
+[sub_resource type="InputEventKey" id=3]
+pressed = true
+scancode = 16777254
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 3 )
+
+[sub_resource type="InputEventKey" id=5]
+pressed = true
+scancode = 16777255
+
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 5 )
+
+[node name="TitleBar" type="Control"]
+anchor_right = 1.0
+margin_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 13
+size_flags_horizontal = 15
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 22.0
+rect_scale = Vector2( 1, 0.990657 )
+mouse_default_cursor_shape = 13
+size_flags_horizontal = 9
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MinimizeButton" type="Button" parent="HBoxContainer"]
+margin_left = 1207.0
+margin_right = 1225.0
+margin_bottom = 22.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+action_mode = 0
+shortcut = SubResource( 2 )
+text = "_"
+flat = true
+align = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MaximizeButton" type="Button" parent="HBoxContainer"]
+margin_left = 1229.0
+margin_right = 1249.0
+margin_bottom = 22.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+shortcut = SubResource( 4 )
+text = "[]"
+flat = true
+script = ExtResource( 2 )
+
+[node name="Exit_X_Button" type="Button" parent="HBoxContainer"]
+margin_left = 1253.0
+margin_right = 1280.0
+margin_bottom = 22.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+shortcut = SubResource( 6 )
+text = "X"
+flat = true
+align = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="." to="." method="_on_TitleBar_gui_input"]
+[connection signal="pressed" from="HBoxContainer/MinimizeButton" to="." method="_on_MinimizeButton_pressed"]
+[connection signal="pressed" from="HBoxContainer/MaximizeButton" to="." method="_on_MaximizeButton_pressed"]
+[connection signal="pressed" from="HBoxContainer/Exit_X_Button" to="." method="_on_Exit_X_Button_pressed"]

@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="SpacerVBoxContainer" type="VBoxContainer"]
+margin_left = 359.0
+margin_right = 486.0
+margin_bottom = 625.0
+size_flags_horizontal = 3
+alignment = 1

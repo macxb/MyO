@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main_Menu/scripts/WindowVResizeControl.gd" type="Script" id=1]
+
+[node name="WindowRResizeControl2" type="Control"]
+margin_left = 1270.0
+margin_right = 1280.0
+margin_bottom = 705.0
+mouse_default_cursor_shape = 10
+size_flags_horizontal = 15
+size_flags_vertical = 15
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+vertical = false
+[connection signal="gui_input" from="." to="." method="_on_WindowVResizeControl_gui_input"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/fonts/red_seven.tres" type="DynamicFont" id=1]
+
+[node name="VersionLabel" type="Label"]
+margin_top = 654.0
+margin_right = 1240.0
+margin_bottom = 670.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+text = "MyO_1.4.0_SaveBuild_Active"
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

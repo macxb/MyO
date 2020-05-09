@@ -1,0 +1,463 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://assets/fonts/red_seven_16.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Main_Menu/scripts/Config.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/red_seven_10_red.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Main_Menu/scenes/buttons/FullScreenToggle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/fonts/red_seven.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Main_Menu/scenes/window/LogoTextureRect.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main_Menu/scripts/buttons/EffectsVolumeHSlider.gd" type="Script" id=7]
+[ext_resource path="res://Main_Menu/scenes/BGTextureRect.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main_Menu/scenes/window/TitleBar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Main_Menu/scripts/buttons/MyadCoreVolumeHSlider.gd" type="Script" id=10]
+[ext_resource path="res://Main_Menu/scripts/buttons/MusicVolumeHSlider.gd" type="Script" id=11]
+[ext_resource path="res://Main_Menu/scenes/window/WindowLResizeControl.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Main_Menu/scenes/window/VersionLabel.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Main_Menu/scenes/window/WindowRResizeControl.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Main_Menu/scenes/window/WindowVResizeControl.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Main_Menu/scripts/buttons/MasterVolumeHSlider.gd" type="Script" id=16]
+[ext_resource path="res://Main_Menu/scenes/buttons/Back_Button.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Main_Menu/scenes/SpacerVBoxContainer.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Main_Menu/scenes/buttons/LoadButton.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Main_Menu/scenes/buttons/CancelButton.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Main_Menu/scenes/buttons/SaveButton.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Main_Menu/scenes/buttons/MusicMuteCheckButton.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Main_Menu/scripts/SaveSys.gd" type="Script" id=23]
+[ext_resource path="res://Main_Menu/scenes/buttons/ResetButton.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Main_Menu/scenes/buttons/MusicSelectButton.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Main_Menu/scripts/buttons/MusicSelectButton.gd" type="Script" id=26]
+
+[node name="ConfigScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 11
+size_flags_vertical = 11
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGTextureRect" parent="." instance=ExtResource( 8 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.0
+margin_bottom = 0.0
+
+[node name="SpacerHBoxContainer2" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_top = 25.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = 80.0
+margin_right = -30.0
+margin_bottom = -30.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpacerVBoxContainer4" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 77.0
+margin_bottom = 610.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="AudioVBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 81.0
+margin_right = 370.0
+margin_bottom = 610.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+script = ExtResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/AudioVBoxContainer"]
+margin_right = 289.0
+margin_bottom = 24.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.117647, 0.760784, 0.823529, 1 )
+text = "Audio"
+align = 1
+
+[node name="master_volume" type="Label" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 28.0
+margin_right = 289.0
+margin_bottom = 44.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+text = "master volume"
+
+[node name="MasterVolumeHSlider" type="HSlider" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 48.0
+margin_right = 289.0
+margin_bottom = 64.0
+hint_tooltip = "Use Mouse Wheel"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+min_value = -40.0
+max_value = 10.0
+value = -25.0
+tick_count = 10
+ticks_on_borders = true
+script = ExtResource( 16 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="SoundMuteCheckButton" type="CheckButton" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 68.0
+margin_right = 289.0
+margin_bottom = 108.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+action_mode = 0
+text = "Sound Mute"
+flat = true
+
+[node name="music_volume" type="Label" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 112.0
+margin_right = 289.0
+margin_bottom = 128.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+text = "Music Volume"
+
+[node name="MusicVolumeHSlider" type="HSlider" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 132.0
+margin_right = 289.0
+margin_bottom = 148.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+min_value = -30.0
+max_value = 10.0
+value = -17.0
+tick_count = 10
+ticks_on_borders = true
+script = ExtResource( 11 )
+
+[node name="MusicMuteCheckButton" parent="HBoxContainer/AudioVBoxContainer" instance=ExtResource( 22 )]
+margin_right = 289.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+
+[node name="effects_volume" type="Label" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 196.0
+margin_right = 289.0
+margin_bottom = 212.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+text = "effects volume"
+
+[node name="EffectsVolumeHSlider" type="HSlider" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 216.0
+margin_right = 289.0
+margin_bottom = 232.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+value = 50.0
+editable = false
+tick_count = 10
+ticks_on_borders = true
+script = ExtResource( 7 )
+
+[node name="SFXMuteCheckButton" type="CheckButton" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 236.0
+margin_right = 289.0
+margin_bottom = 276.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.0666667, 0.866667 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+disabled = true
+action_mode = 0
+text = "SFX Mute"
+flat = true
+
+[node name="myad_core_volume" type="Label" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 280.0
+margin_right = 289.0
+margin_bottom = 296.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+text = "myad core volume"
+
+[node name="MyadCoreVolumeHSlider" type="HSlider" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 300.0
+margin_right = 289.0
+margin_bottom = 316.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+value = 75.0
+editable = false
+tick_count = 10
+ticks_on_borders = true
+script = ExtResource( 10 )
+
+[node name="CoreMuteCheckButton" type="CheckButton" parent="HBoxContainer/AudioVBoxContainer"]
+margin_top = 320.0
+margin_right = 289.0
+margin_bottom = 360.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.0666667, 0.866667 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+disabled = true
+action_mode = 0
+text = "Core Mute"
+flat = true
+
+[node name="MusicSelectButton" parent="HBoxContainer/AudioVBoxContainer" instance=ExtResource( 25 )]
+margin_top = 364.0
+margin_right = 289.0
+margin_bottom = 364.0
+size_flags_horizontal = 15
+
+[node name="SpacerVBoxContainer" parent="HBoxContainer" instance=ExtResource( 18 )]
+margin_left = 374.0
+margin_right = 451.0
+margin_bottom = 610.0
+
+[node name="VideoVBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 455.0
+margin_right = 685.0
+margin_bottom = 610.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+
+[node name="Label" type="Label" parent="HBoxContainer/VideoVBoxContainer"]
+margin_right = 230.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.117647, 0.760784, 0.823529, 1 )
+text = "Video"
+align = 1
+
+[node name="FullScreenToggle" parent="HBoxContainer/VideoVBoxContainer" instance=ExtResource( 4 )]
+
+[node name="SpacerVBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 689.0
+margin_right = 766.0
+margin_bottom = 610.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="SocialVBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 770.0
+margin_right = 1139.0
+margin_bottom = 610.0
+size_flags_horizontal = 13
+size_flags_vertical = 13
+
+[node name="Label" type="Label" parent="HBoxContainer/SocialVBoxContainer"]
+margin_right = 369.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.117647, 0.760784, 0.823529, 1 )
+text = "Social & Coms"
+align = 1
+
+[node name="ContactInviteCheckBox" type="CheckBox" parent="HBoxContainer/SocialVBoxContainer"]
+margin_top = 28.0
+margin_right = 369.0
+margin_bottom = 59.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+disabled = true
+pressed = true
+text = "Contact Invites"
+flat = true
+align = 2
+
+[node name="HeadhuntCheckBox" type="CheckBox" parent="HBoxContainer/SocialVBoxContainer"]
+margin_top = 63.0
+margin_right = 369.0
+margin_bottom = 94.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+disabled = true
+pressed = true
+text = "Headhunt Invites"
+flat = true
+align = 2
+
+[node name="TradeAlertsCheckBox" type="CheckBox" parent="HBoxContainer/SocialVBoxContainer"]
+margin_top = 98.0
+margin_right = 369.0
+margin_bottom = 129.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+disabled = true
+pressed = true
+text = "Trade Alerts"
+flat = true
+align = 2
+
+[node name="MercStoreAlertsCheckBox" type="CheckBox" parent="HBoxContainer/SocialVBoxContainer"]
+margin_top = 133.0
+margin_right = 369.0
+margin_bottom = 164.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.67451, 0.00392157, 0.00392157, 1 )
+custom_colors/font_color_hover = Color( 0.87451, 0.00392157, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+disabled = true
+pressed = true
+text = "MercStore Alerts"
+flat = true
+align = 2
+
+[node name="SpacerVBoxContainer3" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 1143.0
+margin_right = 1220.0
+margin_bottom = 610.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="ConfigFileContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -258.5
+margin_top = -50.0
+margin_right = 258.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+script = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResetButton" parent="ConfigFileContainer" instance=ExtResource( 24 )]
+margin_left = 0.0
+margin_right = 132.0
+text = "Reset"
+
+[node name="LoadButton" parent="ConfigFileContainer" instance=ExtResource( 19 )]
+margin_left = 136.0
+margin_right = 245.0
+
+[node name="SaveButton" parent="ConfigFileContainer" instance=ExtResource( 21 )]
+margin_left = 249.0
+margin_right = 357.0
+
+[node name="CancelButton" parent="ConfigFileContainer" instance=ExtResource( 20 )]
+margin_left = 361.0
+margin_right = 517.0
+
+[node name="TitleBar" parent="." instance=ExtResource( 9 )]
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TitleBar"]
+margin_right = 156.0
+margin_bottom = 22.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" parent="TitleBar/HBoxContainer2" instance=ExtResource( 17 )]
+
+[node name="Label" type="Label" parent="TitleBar/HBoxContainer2"]
+margin_left = 77.0
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 19.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.117647, 0.760784, 0.823529, 1 )
+text = "CONFIG"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogoTextureRect" parent="." instance=ExtResource( 6 )]
+expand = true
+
+[node name="VersionLabel" parent="." instance=ExtResource( 13 )]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -16.0
+margin_right = 0.0
+margin_bottom = 0.0
+
+[node name="WindowRResizeControl3" parent="." instance=ExtResource( 12 )]
+margin_bottom = 705.0
+
+[node name="WindowRResizeControl2" parent="." instance=ExtResource( 14 )]
+
+[node name="WindowVResizeControl" parent="." instance=ExtResource( 15 )]
+[connection signal="mastervolumevalue" from="HBoxContainer/AudioVBoxContainer/MasterVolumeHSlider" to="HBoxContainer/AudioVBoxContainer/MasterVolumeHSlider" method="_on_MasterVolumeHSlider_mastervolumevalue"]
+[connection signal="value_changed" from="HBoxContainer/AudioVBoxContainer/MasterVolumeHSlider" to="HBoxContainer/AudioVBoxContainer/MasterVolumeHSlider" method="_on_MasterVolumeHSlider_value_changed"]
+[connection signal="toggled" from="HBoxContainer/AudioVBoxContainer/SoundMuteCheckButton" to="HBoxContainer/AudioVBoxContainer/MasterVolumeHSlider" method="_on_MuteCheckButton_toggled"]
+[connection signal="value_changed" from="HBoxContainer/AudioVBoxContainer/MusicVolumeHSlider" to="HBoxContainer/AudioVBoxContainer/MusicVolumeHSlider" method="_on_MusicVolumeHSlider_value_changed"]
+[connection signal="toggled" from="HBoxContainer/AudioVBoxContainer/MusicMuteCheckButton" to="HBoxContainer/AudioVBoxContainer/MusicVolumeHSlider" method="_on_MusicMuteCheckButton_toggled"]
+[connection signal="value_changed" from="HBoxContainer/AudioVBoxContainer/EffectsVolumeHSlider" to="HBoxContainer/AudioVBoxContainer/EffectsVolumeHSlider" method="_on_EffectsVolumeHSlider_value_changed"]
+[connection signal="toggled" from="HBoxContainer/AudioVBoxContainer/SFXMuteCheckButton" to="HBoxContainer/AudioVBoxContainer/EffectsVolumeHSlider" method="_on_SFXMuteCheckButton_toggled"]
+[connection signal="value_changed" from="HBoxContainer/AudioVBoxContainer/MyadCoreVolumeHSlider" to="HBoxContainer/AudioVBoxContainer/MyadCoreVolumeHSlider" method="_on_MyadCoreVolumeHSlider_value_changed"]
+[connection signal="toggled" from="HBoxContainer/AudioVBoxContainer/CoreMuteCheckButton" to="HBoxContainer/AudioVBoxContainer/MyadCoreVolumeHSlider" method="_on_CoreMuteCheckButton_toggled"]
+[connection signal="ready" from="HBoxContainer/VideoVBoxContainer/FullScreenToggle" to="HBoxContainer/VideoVBoxContainer/FullScreenToggle" method="_on_FullScreenToggle_ready"]
+[connection signal="resetbuttonpressed" from="ConfigFileContainer/ResetButton" to="ConfigFileContainer" method="_on_ResetButton_resetbuttonpressed"]
+[connection signal="loadbuttonpressed" from="ConfigFileContainer/LoadButton" to="ConfigFileContainer" method="_on_LoadButton_loadbuttonpressed"]
+[connection signal="savebuttonpressed" from="ConfigFileContainer/SaveButton" to="ConfigFileContainer" method="_on_SaveButton_savebuttonpressed"]
+[connection signal="pressed" from="TitleBar/HBoxContainer2/Button" to="." method="_on_Button_pressed"]
