@@ -1,0 +1,318 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Main_Menu/scenes/FadeIn.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Main_Menu/scenes/StartScreenLogoTextureRect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Main_Menu/scenes/buttons/ConfigButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main_Menu/scenes/buttons/FAQ_Button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Main_Menu/scenes/buttons/ExitButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Main_Menu/scenes/BGTextureRect.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main_Menu/scenes/streamPlayers/TitleScreenVideoPlayer.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Main_Menu/scenes/buttons/EnterNexusButton.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main_Menu/scenes/buttons/ContinueButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Main_Menu/scenes/window/WindowRResizeControl.tscn" type="PackedScene" id=10]
+[ext_resource path="res://TitleScreen.gd" type="Script" id=11]
+[ext_resource path="res://Main_Menu/scenes/window/TitleBar.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Main_Menu/scenes/window/VersionLabel.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Main_Menu/scenes/window/WindowVResizeControl.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Main_Menu/scenes/buttons/RankingButton.tscn" type="PackedScene" id=15]
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 640, 360 )
+size_flags_horizontal = 11
+size_flags_vertical = 11
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [  ]
+}
+scene_path_to_load = "scene_to_load"
+
+[node name="BGTextureRect" parent="." instance=ExtResource( 6 )]
+rect_min_size = Vector2( 1280, 720 )
+size_flags_horizontal = 11
+size_flags_vertical = 11
+
+[node name="menu" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeaderHBoxContainer" type="HBoxContainer" parent="menu"]
+margin_right = 1260.0
+margin_bottom = 118.0
+size_flags_horizontal = 9
+size_flags_vertical = 9
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" parent="menu/HeaderHBoxContainer" instance=ExtResource( 2 )]
+
+[node name="CenterRow" type="HBoxContainer" parent="menu"]
+margin_top = 122.0
+margin_right = 1260.0
+margin_bottom = 700.0
+mouse_filter = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="menu/CenterRow"]
+margin_right = 362.0
+margin_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+alignment = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="menu/CenterRow/VBoxContainer2"]
+margin_right = 362.0
+margin_bottom = 578.0
+size_flags_horizontal = 11
+size_flags_vertical = 11
+
+[node name="VideoPlayer2" parent="menu/CenterRow/VBoxContainer2/HBoxContainer" instance=ExtResource( 7 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 362.0
+margin_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="VideoPlayer3" parent="menu/CenterRow/VBoxContainer2/HBoxContainer" instance=ExtResource( 7 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 291.0
+margin_right = 362.0
+margin_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="Buttons" type="VBoxContainer" parent="menu/CenterRow"]
+margin_left = 366.0
+margin_right = 893.0
+margin_bottom = 578.0
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="EnterNexusButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 8 )]
+margin_right = 527.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "Enter Nexus"
+scene_to_load = "res://Nexus_GTM/scenes/Nexus.tscn"
+
+[node name="ContinueButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 9 )]
+margin_right = 527.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "Continue"
+scene_to_load = "res://Main_Menu/scenes/Continue.tscn"
+
+[node name="ConfigButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 3 )]
+margin_right = 527.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "Config"
+scene_to_load = "res://Main_Menu/scenes/Config.tscn"
+
+[node name="FAQ_Button" parent="menu/CenterRow/Buttons" instance=ExtResource( 4 )]
+margin_top = 165.0
+margin_right = 527.0
+margin_bottom = 216.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+scene_to_load = "res://Main_Menu/scenes/FAQ.tscn"
+
+[node name="ExitButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 5 )]
+margin_top = 220.0
+margin_right = 527.0
+margin_bottom = 271.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+scene_to_load = "res://Main_Menu/scenes/Exit.tscn"
+
+[node name="RankingButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 15 )]
+
+[node name="ClanConButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 8 )]
+margin_top = 330.0
+margin_right = 527.0
+margin_bottom = 381.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "ClanCon"
+align = 2
+scene_to_load = "res://Main_Menu/scenes/ClanCon.tscn"
+
+[node name="PilotConButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 8 )]
+margin_top = 385.0
+margin_right = 527.0
+margin_bottom = 436.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "PilotCon"
+align = 2
+scene_to_load = "res://Main_Menu/scenes/PilotCon.tscn"
+
+[node name="MercStoreButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 8 )]
+margin_top = 440.0
+margin_right = 527.0
+margin_bottom = 491.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "MercStore"
+align = 2
+scene_to_load = "res://Main_Menu/scenes/MercStore.tscn"
+
+[node name="TradeMarketButton" parent="menu/CenterRow/Buttons" instance=ExtResource( 8 )]
+margin_top = 495.0
+margin_right = 527.0
+margin_bottom = 546.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+text = "Trade Market"
+align = 2
+scene_to_load = "res://Main_Menu/scenes/TradeMarket.tscn"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="menu/CenterRow"]
+margin_left = 897.0
+margin_right = 1260.0
+margin_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+alignment = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="menu/CenterRow/VBoxContainer"]
+margin_right = 363.0
+margin_bottom = 578.0
+size_flags_horizontal = 11
+size_flags_vertical = 11
+
+[node name="VideoPlayer2" parent="menu/CenterRow/VBoxContainer/HBoxContainer" instance=ExtResource( 7 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 363.0
+margin_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="VideoPlayer3" parent="menu/CenterRow/VBoxContainer/HBoxContainer" instance=ExtResource( 7 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 363.0
+margin_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="WindowLResizeControl3" parent="." instance=ExtResource( 10 )]
+margin_left = 0.0
+margin_top = 20.0
+margin_right = 10.0
+left = true
+
+[node name="WindowRResizeControl2" parent="." instance=ExtResource( 10 )]
+margin_top = 20.0
+
+[node name="TitleBar" parent="." instance=ExtResource( 12 )]
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="VersionLabel" parent="." instance=ExtResource( 13 )]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 0.427
+margin_top = -15.9999
+margin_right = 475.427
+margin_bottom = 6.10352e-05
+
+[node name="WindowVResizeControl" parent="." instance=ExtResource( 14 )]
+mouse_filter = 1
+
+[node name="FadeIn" parent="." instance=ExtResource( 1 )]
+visible = false
+anchor_top = 0.001462
+anchor_bottom = 1.00146
+mouse_filter = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+[connection signal="pressed" from="menu/CenterRow/Buttons/ClanConButton" to="menu/CenterRow/Buttons/ClanConButton" method="_on_Button_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/PilotConButton" to="menu/CenterRow/Buttons/PilotConButton" method="_on_Button_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/MercStoreButton" to="menu/CenterRow/Buttons/MercStoreButton" method="_on_Button_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/TradeMarketButton" to="menu/CenterRow/Buttons/TradeMarketButton" method="_on_Button_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
