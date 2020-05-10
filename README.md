@@ -18,5 +18,11 @@ When an alien scout passing close to a mining asteroid explosion rescued all sur
 The interplanetary social networks were aflame! The public demand for attempts at communication with the now popularly called “visitors” grew.  The crew of the alien scout were proclaimed heroes by the public, even without knowing anything about them.\
 Then the same scout returned from its fleet & stopped in Terran geosynchronous orbit, above the middle of the Atlantic Ocean. \
 A single message was received:\
-“Permission to land.”\
-### Next Section
+“Permission to land.”
+
+### Overview 
+In the recent past the earth has finally made contact with aliens.\
+Then with a galaxy destroying disaster in another galaxy, caused by a war between two of the galaxies’ races.\
+A system of Clans was formally instituted and Clan sizes were limited.\
+War above Clan level was forbidden in all known galaxies.\
+Race & origin lost importance and Clan became paramount.
