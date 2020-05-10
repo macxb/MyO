@@ -9,7 +9,7 @@ Under the 2025 United Mars Treaty no colonisation of any part of Mars could take
 In 2045 the Mars Interim Committee was disbanded & the Mars Government Union was instituted.\
 In 2050 the MGU was granted full authority & independence over Martian Planetary & aerospace affairs.\
 In 2061 MGU formally petitioned full authority over Martian Spatial Territory which was denied by Terran authorities causing the blockade of metal exports from Mars by Martian authorities creating a financial crash on earth.  This led to an interplanetary dispute which resulted in the Mars Unilateral Agreement, a declaration of total independence from the earth.\
-We prepared for war; we had practice, killing our own...\\
+We prepared for war; we had practice, killing our own...\
 Then the [Race 2] arrived & sat, without communication or movement, on the outskirts of the Sol system & we continued preparing for war. Against a different enemy.\
 Both Earth & Mars united against this perceived common enemy.\
 Before contact was even made, war was prepared.  The alien race sent repeated scout ships, never communicating, never interacting. \
@@ -18,5 +18,5 @@ When an alien scout passing close to a mining asteroid explosion rescued all sur
 The interplanetary social networks were aflame! The public demand for attempts at communication with the now popularly called “visitors” grew.  The crew of the alien scout were proclaimed heroes by the public, even without knowing anything about them.\
 Then the same scout returned from its fleet & stopped in Terran geosynchronous orbit, above the middle of the Atlantic Ocean. \
 A single message was received:\
-“Permission to land.”\\
+“Permission to land.”\
 ### Next Section
