@@ -25,3 +25,10 @@ This will allow Gamers to become proficient in the GTMs of their choice or in al
 * Then with a galaxy destroying disaster in another galaxy, caused by a war between two of the galaxies’ races. A system of Clans was formally instituted and Clan sizes were limited.\
 * War above Clan level was forbidden in all known galaxies.\
 * Race & origin lost importance and Clan became paramount.
+
+### Code
+```swift
+func _OS_FullScreenCheck():
+# warning-ignore:return_value_discarded
+        OS.is_window_maximized()
+        print("Window Maximized")```
