@@ -6,7 +6,7 @@ alt="Menu image 1.4.0.a" width="1080" height="500" border="5" />
 This games’ main aim is to give a total gaming experience by providing all types of GamePlay with different Game Type Modules (GTMs) in one game within a commonly themed universe, Scoreboard for each GTM and an overall Game scoreboard (Top).
 This will allow Gamers to become proficient in the GTMs of their choice or in all of them. Gamers now look to escape “enslaving” Gameplay and we want to help them do that!
 
-### InGame Music by @louisinker
+### InGame Music by [@louisinker](https://github.com/louisinker "@louisinker")
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=2i3--jrlQjw
 " target="_blank"><img src="http://img.youtube.com/vi/2i3--jrlQjw/0.jpg" 
 alt="We are Myriad @louisinker#0769" width="240" height="180" border="10" /></a>
