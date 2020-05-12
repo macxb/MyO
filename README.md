@@ -25,8 +25,7 @@ alt="We are Myriad @louisinker#0769" width="240" height="180" border="10" /></a>
 * When an alien scout passing close to a mining asteroid explosion rescued all surviving humans and left them in the nearest human outpost. The Human race paused, the fleet was ordered to halt and remain in place.
 * The interplanetary social networks were aflame! The public demand for attempts at communication with the now popularly called “visitors” grew.  The crew of the alien scout were proclaimed heroes by the public, even without knowing anything about them.
 * Then the same scout returned from its fleet & stopped in Terran geosynchronous orbit, above the middle of the Atlantic Ocean. 
-* A single message was received:
-* “Permission to land.”
+* A single message was received: “Permission to land.”
 
 ### Overview 
 * In the recent past the earth has finally made contact with aliens.
