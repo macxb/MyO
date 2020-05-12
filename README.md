@@ -1,5 +1,7 @@
 # Myriad: Origins (MyO)
-![Menu image 1.4.0.a](https://cdn.discordapp.com/attachments/354584610023276545/689573924895588399/unknown.png "Menu image 1.4.0.a")
+
+<img src="https://cdn.discordapp.com/attachments/354584610023276545/689573924895588399/unknown.png" 
+alt="Menu image 1.4.0.a" width="1080" height="500" border="5" />
 
 This games’ main aim is to give a total gaming experience by providing all types of GamePlay with different Game Type Modules (GTMs) in one game within a commonly themed universe, Scoreboard for each GTM and an overall Game scoreboard (Top).
 This will allow Gamers to become proficient in the GTMs of their choice or in all of them. Gamers now look to escape “enslaving” Gameplay and we want to help them do that!
