@@ -16,7 +16,7 @@ alt="We are Myriad @louisinker#0769" width="240" height="180" border="10" /></a>
 * In 2050 the MGU was granted full authority & independence over Martian Planetary & aerospace affairs.
 * In 2061 MGU formally petitioned full authority over Martian Spatial Territory which was denied by Terran authorities causing the blockade of metal exports from Mars by Martian authorities creating a financial crash on earth.  This led to an interplanetary dispute which resulted in the Mars Unilateral Agreement, a declaration of total independence from the earth.
 * We prepared for war; we had practice, killing our own...
-* Then the [Race 2] arrived & sat, without communication or movement, on the outskirts of the Sol system & we continued preparing for war. Against a different enemy.\
+* Then the [Race 2] arrived & sat, without communication or movement, on the outskirts of the Sol system & we continued preparing for war. Against a different enemy.
 * Both Earth & Mars united against this perceived common enemy.
 * Before contact was even made, war was prepared.  The alien race sent repeated scout ships, never communicating, never interacting. 
 * The first Human space fleet was assembled & began its journey towards the alien armada, vastly outnumbered & towards almost certain defeat.
