@@ -38,4 +38,4 @@ alt="We are Myriad @louisinker#0769" width="240" height="180" border="10" /></a>
 func _OS_FullScreenCheck():
 # warning-ignore:return_value_discarded
         OS.is_window_maximized()
-        print("Window Maximized")```
+        print("Window Maximized")
