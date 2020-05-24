@@ -1,14 +1,8 @@
 extends Control
 
-var FullScreenToggle = ("res://Main_Menu/scenes/buttons/FullScreenToggle.tscn")
-
-# need to develope this into code that will set the toggles 
-# apearance ocording to weather the game is in fullscreen or not
-
-#func _on_ConfigScreen_ready():
-#	OS.window_fullscreen = not OS.window_fullscreen
-#	if OS.is_window_fullscreen():
-#		FullScreenToggle.set_toggle_mode(2)
+signal loadbuttonpressed
+signal resetbuttonpressed
+signal savebuttonpressed
 
 func _on_Button_pressed():
 # warning-ignore:return_value_discarded
@@ -19,9 +13,24 @@ func _on_MusicSelectButton_ready():
 	
 func _on_MusicSelectButton_idOne():
 	print ("We are Myriad selected")
-	pass
 
 func _on_MusicSelectButton_idTwo():
 	print ("Born in Nexus selected")
-	pass
 
+func _on_LoadButton_pressed():
+	print("Load button was pressed!")
+	emit_signal("loadbuttonpressed")
+
+func _on_SaveButton_pressed():
+	print("Save button was pressed!")
+	emit_signal("savebuttonpressed")
+
+func _on_ResetButton_pressed():
+	print("Reset button was pressed!")
+	emit_signal("resetbuttonpressed")
+	
+func _on_CancelButton_pressed():
+	print("Cancel button was pressed!")
+	# warning-ignore:return_value_discarded
+	get_tree().change_scene("res://TitleScreen.tscn")
+	
