@@ -19,4 +19,4 @@ func _process(_delta: float) -> void:
 #		else:
 #			add_color_override("font_color", Color(1, 1, 0, 1))
 	else:
-		text = "Er."
+		text = "Error on color overide."

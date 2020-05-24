@@ -8,9 +8,13 @@ export var mouse_sensitivity = 0.3
 
 onready var head = $Head
 onready var camera = $Head/Camera
+##onready var walk = $AnimationPlayer()
 
 var velocity = Vector3()
 var camera_x_rotation = 0
+
+# warning-ignore:unused_signal
+signal walking
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -34,11 +38,15 @@ func _physics_process(delta):
 	var direction = Vector3()
 	if Input.is_action_pressed("move_forward"):
 		direction -= head_basis.z
+#		emit_signal("walking")
+#		AnimationPlayer.play(walk)
+		
 	elif Input.is_action_pressed("move_backward"):
 		direction += head_basis.z
 	
 	if Input.is_action_pressed("move_left"):
 		direction -= head_basis.x
+		
 	elif Input.is_action_pressed("move_right"):
 		direction += head_basis.x
 	
@@ -51,3 +59,8 @@ func _physics_process(delta):
 		velocity.y += jump_power
 	
 	velocity = move_and_slide(velocity, Vector3.UP)
+
+
+func _on_Player_walking():
+	pass # Replace with function body.
+#call animplayer and execute res://assets/3dModels/masked-mayhem/gltf/mahem-walking.tres

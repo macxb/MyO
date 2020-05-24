@@ -1,36 +1,32 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Nexus_GTM/Player-test/Player.gd" type="Script" id=1]
-[ext_resource path="res://assets/3dModels/masked-mayhem/gltf/mahem-walking.gltf" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.75
 height = 1.25
 
 [sub_resource type="CapsuleMesh" id=2]
-radius = 0.75
-mid_height = 1.25
 
 [node name="Player" type="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1.5148, 0, 0, 0, 1, 0, 0, 0 )
 script = ExtResource( 1 )
 
 [node name="Head" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.919402, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58513, 0 )
 
 [node name="Camera" type="Camera" parent="Head"]
-transform = Transform( 0.990261, -0.0264127, 0.136697, -0.0195833, 0.945653, 0.324586, -0.137841, -0.324102, 0.935926, 1.3176, 0.661386, 2 )
+transform = Transform( 0.990015, -0.00182687, 0.14095, -0.0195784, 0.643541, 0.145857, -0.137807, -0.222918, 0.965048, 0.219579, 0.127013, 0.567551 )
 doppler_tracking = 2
+fov = 78.3506
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+transform = Transform( 0.533419, 0, 0, 0, -1.06162e-07, -0.651616, 0, 0.696152, -1.13418e-07, 0.0191435, 0.862132, 0.00484604 )
 shape = SubResource( 1 )
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
-visible = false
+[node name="MeshInstance" type="MeshInstance" parent="CollisionShape"]
+transform = Transform( 0.773009, 0, 0, 0, 0.689542, 2.94696e-08, 0, 2.94695e-08, 0.870424, 0, 0, 0 )
 mesh = SubResource( 2 )
 material/0 = null
-
-[node name="mahem-walking" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 0, 0, 0 )
+[connection signal="walking" from="." to="." method="_on_Player_walking"]
+[connection signal="visibility_changed" from="Head/Camera" to="." method="_on_Camera_visibility_changed"]
