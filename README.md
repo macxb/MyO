@@ -1,4 +1,4 @@
-# Myriad: Origins (MyO)
+# Myriad: Origins (MyO) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W21C3X1)
 
 <img src="https://cdn.discordapp.com/attachments/354584610023276545/689573924895588399/unknown.png" 
 alt="Menu image 1.4.0.a" width="1080" height="500" border="5" />
