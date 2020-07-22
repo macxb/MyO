@@ -1,4 +1,4 @@
-# Myriad: Origins (MyO) <a href="https://godotengine.org" target="_blank"><img src="https://img.shields.io/badge/godot-v3.2-%23478cbf" alt="GODOT GAME ENGINE" border="1" /></a>
+# Myriad: Origins (MyO) <a href="https://godotengine.org" target="blank"><img src="https://img.shields.io/badge/godot-v3.2-%23478cbf" alt="GODOT GAME ENGINE" border="1" /></a>
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W21C3X1)
 
 <img src="https://cdn.discordapp.com/attachments/354584610023276545/689573924895588399/unknown.png" 
