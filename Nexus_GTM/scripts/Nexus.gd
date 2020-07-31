@@ -7,7 +7,7 @@ extends Spatial
 
 
 # Called when the node enters the scene tree for the first time.
-func_ready():
+func _ready():
 	pass # Replace with function body.
 
 
