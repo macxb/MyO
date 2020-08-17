@@ -95,7 +95,7 @@ Astronomical instrument of the type of the quintant and the sextant, and of anal
 
 ### Code
 ```swift
-func _OS_FullScreenCheck():
-# warning-ignore:return_value_discarded
-        OS.is_window_maximized()
-        print("Window Maximized")
+func highlighted_code(language):
+  text = "highlighted"
+  for(gdscript):
+    use "swift"
