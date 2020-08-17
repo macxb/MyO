@@ -1,6 +1,7 @@
 # Myriad: Origins (MyO) 
 <a href="https://godotengine.org" target="_new"><img src="https://img.shields.io/badge/godot-v3.2-%23478cbf" alt="GODOT GAME ENGINE" border="1" /></a>
 <a href="https://img.shields.io/badge/online%20life-100%25-green" target="_new"><img src="https://img.shields.io/badge/online%20life-100%25-green" alt="online life" border="1" /></a>
+<a href="https://img.shields.io/badge/Fairplay-100%25-green" target="_new"><img src="https://img.shields.io/badge/Fairplay-100%25-green" alt="GODOT GAME ENGINE" border="1" /></a>
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W21C3X1)
 
