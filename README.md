@@ -7,7 +7,7 @@
 
 # Things do Change in Myriad Ways
 
-## "When we were alone, we fought ourselves.</br> When we encountered others, we fought them and they fought us.</br> Then we ALL realised, we were just waisting time...</br> We are from Myriad Origins, BUT WE ARE ONE CLAN."</br>
+> "When we were alone, we fought ourselves.</br> When we encountered others, we fought them and they fought us.</br> Then we ALL realised, we were just waisting time...</br> We are from Myriad Origins, BUT WE ARE ONE CLAN."</br>
 
 <img src="https://cdn.discordapp.com/attachments/507454734139916288/744862365526523974/MyriadOrigins-logo-500x197.png" 
 alt="MyO Logo" border="1" />
