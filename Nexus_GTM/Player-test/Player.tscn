@@ -16,7 +16,7 @@ script = ExtResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58513, 0 )
 
 [node name="Camera" type="Camera" parent="Head"]
-transform = Transform( 0.990015, -0.00182687, 0.14095, -0.0195784, 0.643541, 0.145857, -0.137807, -0.222918, 0.965048, 0.219579, 0.127013, 0.567551 )
+transform = Transform( 0.999752, 0, 0, 0, 0.681059, 0, 0, 0, 0.986133, 0.219579, 0.127013, 0.567551 )
 doppler_tracking = 2
 fov = 78.3506
 
