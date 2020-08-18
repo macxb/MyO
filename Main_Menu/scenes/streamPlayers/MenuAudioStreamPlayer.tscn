@@ -1,12 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://assets/audio/born in nexus.ogg" type="AudioStream" id=1]
-[ext_resource path="res://Main_Menu/scripts/streamPlayers/AudioStreamPlayer.gd" type="Script" id=2]
+[ext_resource path="res://audio/born_in_nexus.ogg" type="AudioStream" id=1]
 
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+
+[node name="MenuAudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )
 autoplay = true
-mix_target = 1
 bus = "Music"
-script = ExtResource( 2 )

@@ -1,0 +1,18 @@
+[gd_scene format=2]
+
+[node name="MyadCoreVolumeHSlider" type="HSlider" groups=[
+"ConfigPersist",
+]]
+margin_top = 300.0
+margin_right = 289.0
+margin_bottom = 316.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+value = 75.0
+editable = false
+tick_count = 10
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,23 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://assets/fonts/red_seven.tres" type="DynamicFont" id=1]
-[ext_resource path="res://Main_Menu/scripts/buttons/MusicSelectButton.gd" type="Script" id=2]
-[ext_resource path="res://Main_Menu/scripts/Config.gd" type="Script" id=3]
 
 [node name="Control" type="Control"]
-margin_right = 40.0
-margin_bottom = 40.0
-script = ExtResource( 3 )
+margin_right = 198.0
+margin_bottom = 22.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="MusicSelectButton" type="OptionButton" parent="."]
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-margin_top = -11.0
-margin_bottom = 11.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
 custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
@@ -27,13 +19,7 @@ text = "Music Select"
 flat = true
 items = [ "Music Select", null, false, 0, null, "We are Myriad", null, false, 1, null, "Born in Nexus", null, false, 2, null ]
 selected = 0
-script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
-[connection signal="idOne" from="MusicSelectButton" to="." method="_on_MusicSelectButton_idOne"]
-[connection signal="idTwo" from="MusicSelectButton" to="." method="_on_MusicSelectButton_idTwo"]
-[connection signal="item_selected" from="MusicSelectButton" to="MusicSelectButton" method="_on_MusicSelectButton_item_selected_two"]
-[connection signal="item_selected" from="MusicSelectButton" to="MusicSelectButton" method="_on_MusicSelectButton_item_selected_one"]
-[connection signal="ready" from="MusicSelectButton" to="MusicSelectButton" method="_on_MusicSelectButton_ready"]

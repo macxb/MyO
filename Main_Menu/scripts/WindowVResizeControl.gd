@@ -16,7 +16,7 @@ func _ready():
 			distance_to_edge = rect_global_position.x
 		else:
 			distance_to_edge = rect_global_position.x - OS.window_size.x
-			
+"res://Main_Menu/scripts/WindowVResizeControl.gd"			
 func _on_WindowVResizeControl_gui_input(event):
 	if event is InputEventMouseButton:
 		if event.get_button_index() == 1:

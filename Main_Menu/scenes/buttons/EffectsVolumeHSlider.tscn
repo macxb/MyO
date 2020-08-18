@@ -1,0 +1,18 @@
+[gd_scene format=2]
+
+[node name="EffectsVolumeHSlider" type="HSlider" groups=[
+"ConfigPersist",
+]]
+margin_top = 216.0
+margin_right = 289.0
+margin_bottom = 232.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+value = 50.0
+editable = false
+tick_count = 10
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

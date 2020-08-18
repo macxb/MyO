@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="MasterVolumeHSlider" type="HSlider" groups=[
+"ConfigPersist",
+]]
+margin_top = 48.0
+margin_right = 289.0
+margin_bottom = 64.0
+hint_tooltip = "Use Mouse Wheel"
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+min_value = -40.0
+max_value = 10.0
+value = -25.0
+tick_count = 10
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}

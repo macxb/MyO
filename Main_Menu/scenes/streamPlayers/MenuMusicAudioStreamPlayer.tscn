@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://audio/born_in_nexus.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Singletons/Config.gd" type="Script" id=2]
+
+
+
+
+[node name="AudioControl" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+bus = "Music"

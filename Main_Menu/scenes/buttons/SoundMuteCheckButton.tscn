@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/fonts/red_seven_10_red.tres" type="DynamicFont" id=1]
+
+[node name="SoundMuteCheckButton" type="CheckButton" groups=[
+"ConfigPersist",
+]]
+margin_top = 68.0
+margin_right = 289.0
+margin_bottom = 108.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 13
+size_flags_vertical = 13
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0.517647, 0.517647, 0.517647, 1 )
+custom_colors/font_color = Color( 0.764706, 0.0823529, 0.0823529, 1 )
+custom_colors/font_color_hover = Color( 0.117647, 0.760784, 0.823529, 1 )
+custom_colors/font_color_pressed = Color( 0.290196, 0.87451, 0.298039, 1 )
+action_mode = 0
+text = "Sound Mute"
+flat = true
