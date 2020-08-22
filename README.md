@@ -5,6 +5,8 @@
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W21C3X1)
 
+<iframe src="https://canary.discordapp.com/widget?id=490459648827195393&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 # Things do Change in Myriad Ways
 
 > "When we were alone, we fought ourselves.</br> When we encountered others, we fought them and they fought us.</br> Then we ALL realised, we were just waisting time...</br> We are from Myriad Origins, BUT WE ARE ONE CLAN."</br>
