@@ -172,7 +172,36 @@ o Accountancy/Legal Costs:
 • 250.00€/m
 
 • Total Costs with breakdown
-Section/TeamCost (€)Monthly PaymentTeam Salaries6000.00Accountancy & Legal250.00Workspace400.00Workspace Service Costs150.00Software Licenses150.00Monthly Total6950.00One Time PaymentHardware8000.00Software & Dev Licenses1000.00Game Testing (Alpha Test Phase)Volunteers/Paid*One Time Total9000.00*Alpha Testers Available
+Section/Team
+Cost (€)
+Monthly Payment
+
+Team Salaries
+6000.00
+Accountancy & Legal
+250.00
+Workspace
+400.00
+Workspace Service Costs
+150.00
+Software Licenses
+150.00
+Monthly Total
+6950.00
+
+
+One Time Payment
+
+Hardware
+8000.00
+Software & Dev Licenses
+1000.00
+Game Testing (Alpha Test Phase)
+Volunteers/Paid*
+One Time Total
+9000.00
+*Alpha Testers Available
+
 
 
 
