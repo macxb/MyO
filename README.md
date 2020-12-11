@@ -50,7 +50,7 @@ alt="We are Myriad @louisinker#0769" width="240" height="180" border="1" /></a>
 #### Geometric term: Quadrant
 "Fourth part of the circumference or circle between two perpendicular radials.
 Astronomical instrument of the type of the quintant and the sextant, and of analogous application in boats and airplanes, whose sector comprises only 45 degrees or the eighth part (octant) of the circle." 
-- THE IMAGEs ARE ONLY TO GIVE A GENERAL IDEA
+- THE IMAGES ARE ONLY TO GIVE A GENERAL IDEA
 <a href="https://cdn.discordapp.com/attachments/535862783762497536/535883871577702400/radar-pngrepo-com.png" target="_new"><img src="https://cdn.discordapp.com/attachments/535862783762497536/535883871577702400/radar-pngrepo-com.png" alt="ROUND GALAXY" border="1" /></a>
 <a href="https://cdn.discordapp.com/attachments/535862783762497536/538174849512636447/space-map-octants.png" target="_new"><img src="https://cdn.discordapp.com/attachments/535862783762497536/538174849512636447/space-map-octants.png" alt="ROUND GALAXY" border="1" /></a>
 
