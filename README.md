@@ -15,11 +15,6 @@ alt="MyO Logo" border="1" />
 This games’ main aim is to give a total gaming experience by providing all types of GamePlay with different Game Type Modules (GTMs) in one game within a commonly themed universe, Scoreboard for each GTM and an overall Game scoreboard (Top).
 This will allow Gamers to become proficient in the GTMs of their choice or in all of them. Gamers now look to escape “enslaving” Gameplay and we want to help them do that!
 
-### InGame Music by [@louisinker](https://github.com/louisinker "@louisinker")
-<a href="http://www.youtube.com/watch?v=2i3--jrlQjw
-" target="_blank"><img src="http://img.youtube.com/vi/2i3--jrlQjw/0.jpg" 
-alt="We are Myriad @louisinker#0769" width="240" height="180" border="1" /></a>
-
 ## Backstory
 * When Mars was finally colonised in 2030 we hoped for a new start. A new world, a new way.
 * Under the 2025 United Mars Treaty no colonisation of any part of Mars could take place in the name of a single Terran country.
