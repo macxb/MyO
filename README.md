@@ -68,7 +68,7 @@ Astronomical instrument of the type of the quintant and the sextant, and of anal
 - Level Protection will not work in pvp and advanced sectors
 
 #### The Planetary Effect  
-- Depending on the size of the planet that the gravity of the same varies:
+- Depending on the mass of the planet that the gravity of the same varies:
   - Modifying in this way the gameplay
   - The greater the gravity the slower the movement speed 
   - Shorter jumps and vice versa
