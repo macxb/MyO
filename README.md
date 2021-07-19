@@ -89,8 +89,8 @@ Astronomical instrument of the type of the quintant and the sextant, and of anal
 - Randomly appearing black holes that kill everything. Just because...
 
 ### Code
-```swift
+```gdscript
 func highlighted_code(language):
   text = "highlighted"
   for(gdscript):
-    use "swift"
+    use "gdscript"
