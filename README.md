@@ -46,7 +46,6 @@ This will allow Gamers to become proficient in the GTMs of their choice or in al
 "Fourth part of the circumference or circle between two perpendicular radials.
 Astronomical instrument of the type of the quintant and the sextant, and of analogous application in boats and airplanes, whose sector comprises only 45 degrees or the eighth part (octant) of the circle." 
 - THE IMAGES ARE ONLY TO GIVE A GENERAL IDEA
-<img src="https://cdn.discordapp.com/attachments/535862783762497536/535883871577702400/radar-pngrepo-com.png" alt="ROUND GALAXY" border="1" /></a>
 <a href="https://cdn.discordapp.com/attachments/535862783762497536/538174849512636447/space-map-octants.png" target="_new"><img src="https://cdn.discordapp.com/attachments/535862783762497536/538174849512636447/space-map-octants.png" alt="ROUND GALAXY" border="1" /></a>
 
 #### Planets
