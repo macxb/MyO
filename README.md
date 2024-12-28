@@ -9,7 +9,7 @@
 
 > "When we were alone, we fought ourselves.</br> When we encountered others, we fought them and they fought us.</br> Then we ALL realised, we were just waisting time...</br> We are from Myriad Origins, BUT WE ARE ONE CLAN."</br>
 
-<img src="https://cdn.discordapp.com/attachments/507454734139916288/744862365526523974/MyriadOrigins-logo-500x197.png" 
+<img src="[https://cdn.discordapp.com/attachments/507454734139916288/744862365526523974/MyriadOrigins-logo-500x197.png](https://cdn.discordapp.com/attachments/507454734139916288/744862365526523974/MyriadOrigins-logo-500x197.png?ex=677121a2&is=676fd022&hm=c0dd5d7de02065c9ba153f411d4d53f3837eee1a43382e815645f0243d21a16a&)" 
 alt="MyO Logo" border="1" />
 
 This games’ main aim is to give a total gaming experience by providing all types of GamePlay with different Game Type Modules (GTMs) in one game within a commonly themed universe, Scoreboard for each GTM and an overall Game scoreboard (Top).
