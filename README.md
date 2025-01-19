@@ -1,4 +1,5 @@
 # Myriad: Origins (MyO) 
+Myriad: Origins (MyO) is a gaming project that aims to provide a comprehensive gaming experience with various GamePlay types and Game Type Modules (GTMs) within a shared universe. The game's main objective is to allow players to become proficient in multiple GTMs and escape traditional gaming patterns. The project's backstory highlights the importance of unity and cooperation among players, with a focus on PvP and Planet Drop gameplay mechanics. The project is open-source and has multiple contributors from various languages.
 <a href="https://godotengine.org" target="_new"><img src="https://img.shields.io/badge/godot-v3.3-%23478cbf" alt="GODOT GAME ENGINE" border="1" /></a>
 <a href="https://img.shields.io/badge/online%20life-100%25-green" target="_new"><img src="https://img.shields.io/badge/online%20life-100%25-green" alt="online life" border="1" /></a>
 <a href="https://img.shields.io/badge/Fairplay-100%25-green" target="_new"><img src="https://img.shields.io/badge/Fairplay-100%25-green" alt="GODOT GAME ENGINE" border="1" /></a>
