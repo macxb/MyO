@@ -1,0 +1,256 @@
+[gd_scene format=3 uid="uid://bljh6guob8n7e"]
+
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/FadeIn.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/StartScreenLogoTextureRect.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/buttons/ConfigButton.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/buttons/FAQ_Button.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/buttons/ExitButton.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/BGTextureRect.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/buttons/EnterNexusButton.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/buttons/ContinueButton.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/window/WindowRResizeControl.tscn" id="10"]
+[ext_resource type="Script" uid="uid://c8e5dr0w0jbk8" path="res://TitleScreen.gd" id="11"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/window/TitleBar.tscn" id="12"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/window/VersionLabel.tscn" id="13"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/window/WindowVResizeControl.tscn" id="14"]
+[ext_resource type="PackedScene" path="res://Main_Menu/scenes/buttons/RankingButton.tscn" id="15"]
+
+[node name="TitleScreen" type="Control" unique_id=1174293411]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+script = ExtResource("11")
+
+[node name="BGTextureRect" parent="." unique_id=58613678 instance=ExtResource("6")]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 11
+size_flags_vertical = 11
+expand_mode = 1
+
+[node name="menu" type="VBoxContainer" parent="." unique_id=1221508381]
+layout_mode = 0
+anchor_left = 0.008
+anchor_top = 0.014
+anchor_right = 0.992
+anchor_bottom = 0.986
+offset_left = -0.240001
+offset_top = -0.0799999
+offset_right = 0.23999
+offset_bottom = 0.0799561
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+alignment = 1
+
+[node name="HeaderHBoxContainer" type="HBoxContainer" parent="menu" unique_id=1969440112]
+layout_mode = 2
+size_flags_horizontal = 9
+size_flags_vertical = 9
+alignment = 1
+
+[node name="Logo" parent="menu/HeaderHBoxContainer" unique_id=1958257632 instance=ExtResource("2")]
+layout_mode = 2
+
+[node name="CenterRow" type="HBoxContainer" parent="menu" unique_id=2127608094]
+layout_mode = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+mouse_filter = 2
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="menu/CenterRow" unique_id=1295441437]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+alignment = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="menu/CenterRow/VBoxContainer2" unique_id=650407530]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+
+[node name="Buttons" type="VBoxContainer" parent="menu/CenterRow" unique_id=544526497]
+layout_mode = 2
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="EnterNexusButton" parent="menu/CenterRow/Buttons" unique_id=427018892 instance=ExtResource("8")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "Enter Nexus"
+scene_to_load = "res://Nexus_GTM/scenes/Nexus.tscn"
+
+[node name="ContinueButton" parent="menu/CenterRow/Buttons" unique_id=143630217 instance=ExtResource("9")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "Continue"
+scene_to_load = "res://Main_Menu/scenes/Continue.tscn"
+
+[node name="ConfigButton" parent="menu/CenterRow/Buttons" unique_id=747344164 instance=ExtResource("3")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "Config"
+scene_to_load = "res://Main_Menu/scenes/Config.tscn"
+
+[node name="FAQ_Button" parent="menu/CenterRow/Buttons" unique_id=1022490356 instance=ExtResource("4")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+scene_to_load = "res://Main_Menu/scenes/FAQ.tscn"
+
+[node name="ExitButton" parent="menu/CenterRow/Buttons" unique_id=2008324518 instance=ExtResource("5")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+scene_to_load = "res://Main_Menu/scenes/Exit.tscn"
+
+[node name="RankingButton" parent="menu/CenterRow/Buttons" unique_id=927753948 instance=ExtResource("15")]
+layout_mode = 2
+
+[node name="ClanConButton" parent="menu/CenterRow/Buttons" unique_id=1683502223 instance=ExtResource("8")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "ClanCon"
+scene_to_load = "res://Main_Menu/scenes/ClanCon.tscn"
+
+[node name="PilotConButton" parent="menu/CenterRow/Buttons" unique_id=1112351524 instance=ExtResource("8")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "PilotCon"
+scene_to_load = "res://Main_Menu/scenes/PilotCon.tscn"
+
+[node name="MercStoreButton" parent="menu/CenterRow/Buttons" unique_id=2062247546 instance=ExtResource("8")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "MercStore"
+scene_to_load = "res://Main_Menu/scenes/MercStore.tscn"
+
+[node name="TradeMarketButton" parent="menu/CenterRow/Buttons" unique_id=1414212130 instance=ExtResource("8")]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 9
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.764706, 0.0823529, 0.0823529, 1)
+theme_override_colors/font_pressed_color = Color(0.290196, 0.87451, 0.298039, 1)
+theme_override_colors/font_hover_color = Color(0.117647, 0.760784, 0.823529, 1)
+theme_override_colors/font_disabled_color = Color(0.517647, 0.517647, 0.517647, 1)
+text = "Trade Market"
+scene_to_load = "res://Main_Menu/scenes/TradeMarket.tscn"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="menu/CenterRow" unique_id=1446953221]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+alignment = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="menu/CenterRow/VBoxContainer" unique_id=76814462]
+layout_mode = 2
+size_flags_horizontal = 11
+size_flags_vertical = 11
+
+[node name="TitleBar" parent="." unique_id=1640538834 instance=ExtResource("12")]
+anchors_preset = 0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 9
+size_flags_vertical = 11
+
+[node name="VersionLabel" parent="." unique_id=607593326 instance=ExtResource("13")]
+layout_mode = 0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 0.0
+offset_right = 1.0
+offset_bottom = 24.0
+vertical_alignment = 2
+
+[node name="WindowLResizeControl3" parent="." unique_id=1338415948 instance=ExtResource("10")]
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 20.0
+offset_right = 10.0
+left = true
+
+[node name="WindowRResizeControl2" parent="." unique_id=2028487361 instance=ExtResource("10")]
+anchors_preset = 0
+offset_top = 20.0
+
+[node name="WindowVResizeControl" parent="." unique_id=1093989114 instance=ExtResource("14")]
+anchors_preset = 0
+mouse_filter = 1
+
+[node name="FadeIn" parent="." unique_id=1739039704 instance=ExtResource("1")]
+visible = false
+layout_mode = 0
+anchor_top = 0.001462
+anchor_right = 0.0
+anchor_bottom = 1.00146
+size_flags_horizontal = 11
+size_flags_vertical = 11
+mouse_filter = 2
+
+[connection signal="pressed" from="menu/CenterRow/Buttons/EnterNexusButton" to="menu/CenterRow/Buttons/EnterNexusButton" method="_on_EnterNexusButton_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/ClanConButton" to="menu/CenterRow/Buttons/ClanConButton" method="_on_Button_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/PilotConButton" to="menu/CenterRow/Buttons/PilotConButton" method="_on_Button_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/MercStoreButton" to="menu/CenterRow/Buttons/MercStoreButton" method="_on_Button_pressed"]
+[connection signal="pressed" from="menu/CenterRow/Buttons/TradeMarketButton" to="menu/CenterRow/Buttons/TradeMarketButton" method="_on_Button_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
